@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rob Sutton | Portfolio</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  
+  <!--
+  ====================Icons===================
+  -->
+  <script src="https://kit.fontawesome.com/dd714d90e5.js" crossorigin="anonymous"></script>
+
+  <!--========================================
+  ====================Fonts===================
+  =========================================-->
+
+  <!-- Body text -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet"> 
+
+  <!-- Heads and logo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@500&display=swap" rel="stylesheet"> 
+
+  <!--Typewriter animation-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+  <header>
+    <a href="#home"><h1 class="logo">Rob Sutton</h1></a>
+    <input type="checkbox" name="" id="nav-toggle" class="nav-toggle">
+
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="toggle()">Home</a></li>
+            <li><a href="#about" onclick="toggle()">About</a></li>
+            <li><a href="#projects" onclick="toggle()">Projects</a></li>
+            <li><a href="#skills" onclick="toggle()">Skills</a></li>
+            <li><a href="#contact" onclick="toggle()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span>&#9776;</span>
+    </label>
+
+  </header>
+
+  <!--========================================== 
+  =================== HOME ===================== 
+  ===========================================-->
+
+  <section id="home" class="home">
+    <div class="backgroundmask">
+      <h1>&lt;A_new_beginning&gt;</h1>
+      <p class="subtitle">Hello, my name is Rob</p>
+    </div>
+  </section>
+
+  <!--========================================== 
+  ================== ABOUT ===================== 
+  ===========================================-->
+
+  <section id="about" class="about">
+    <h2>Welcome to my portfolio</h2>
+    <img src="./images/MeSquare.jpg" alt="Rob Sutton">
+    <p>Former newspaper sub-editor, page designer and news editor turned trainee developer. Based in northern England, I’m currently learning full stack development with IT Career Switch and Codecademy.<br>
+    I am working to apply my attention to detail, layout and typography skills to a new digital career which draws upon previous HTML and scripting experience. <br>
+    Away from my desk I like walking in the Lake District and landscape photography.</p>
+
+  </section>
+
+  <!--========================================== 
+  ================= PROJECTS =================== 
+  ===========================================-->
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <!-- project item 1 card-->
+    <div class="projects-card">    
+      <img src="./images/projectPortfolio.jpg" alt="">
+      <div class="projects-info">
+        <h3>Portfolio site</h3>
+        <p>HTML | CSS | JS</p>
+        <button data-popup-target="#popup1">More info</button>
+      </div>
+    </div>
+
+    <!-- project item 1 popup -->
+    <div class="popup" id="popup1">
+      <div class="popup-header">
+        <div class="title">Portfolio site</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <!-- project item 1 popup body mobile -->
+      <div class="popup-body">
+        <p>This site draws together the core HTML and CSS skills that I've learned through Codecademy and various tutorials found on YouTube.</p>
+        <p>JavaScript has also been used to create this very popup that you’re reading and the function to close the mobile view menu.</p>
+        <p>Further projects will be added as I make progress through the Full Stack course.</p>
+        <div class="popup-button-container">
+          <a href="https://github.com/rsutton2021/portfolio" target="_blank" ><button>View code</button></a>          
+        </div>        
+      </div>
+      <!-- project item 1 popup body desktop -->
+      <div class="popup-body-dt">
+        <img src="./images/projectPortfolio.jpg" alt="">
+        <p>This site draws together the core HTML and CSS skills that I've learned through Codecademy and various tutorials found on YouTube.</p>
+        <p>The intro animation and the responsive navigation bar were adapted from videos on Kevin Powell's excellent <a href="https://www.youtube.com/kepowob" target="_blank">YouTube channel</a>.</p>
+        <p>JavaScript has also been used to create this very popup that you’re reading and the function to close the mobile view menu.</p>
+        <p>Further projects will be added as I make progress through the Full Stack course.</p>          
+        <div class="popup-button-container">
+          <a href="https://github.com/rsutton2021/portfolio" target="_blank" ><button>View code</button></a>                   
+        </div>    
+      </div>       
+
+    </div>        
+
+    <!-- project item 2-->
+    <div class="projects-card">    
+      <img src="./images/placeholderMaple.jpg" alt="">
+      <div class="projects-info">
+        <h3>Coming soon</h3>
+        <!-- <p>HTML | CSS | JS</p>
+        <button data-popup-target="#popup2">More info</button> -->                
+      </div>
+    </div>
+    <!-- project item 2 popup -->
+    <div class="popup" id="popup2">
+      <div class="popup-header">
+        <div class="title">Pop-up Title 2</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <!-- project item 2 popup body mobile -->
+      <div class="popup-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quisquam assumenda minima harum cupiditate autem odit quibusdam laudantium? Architecto nostrum reprehenderit quia velit eum iure. Dolores at est accusantium doloremque unde illo delectus nihil placeat odio?</p>
+        <div class="popup-button-container">
+          <button>View code</button>
+          <button>Visit site</button>
+        </div>
+      </div>
+      <!-- project item 2 popup body desktop -->
+      <div class="popup-body-dt">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quisquam assumenda minima harum cupiditate autem odit quibusdam laudantium? Architecto nostrum reprehenderit quia velit eum iure. Dolores at est accusantium doloremque unde illo delectus nihil placeat odio?</p>
+        <p>Aperiam modi ab, animi commodi accusamus, eligendi iure maiores ipsa unde dolorem earum optio ex aliquam laboriosam. Error unde quidem doloribus vitae, molestias, qui quisquam cumque tempore sed ducimus aut sint officiis voluptates, et reiciendis dolor. Non consequuntur explicabo asperiores commodi perferendis voluptatem culpa fuga.</p> 
+        <p>Placeat officiis doloribus, pariatur nulla quasi voluptatum cupiditate quia, delectus repellendus neque et autem excepturi corrupti error odit quisquam!</p>
+        <div class="popup-button-container">
+          <button>View code</button>
+          <button>Visit site</button>
+        </div>  
+      </div>
+    </div> 
+    
+    <!-- project item 3-->
+    <div class="projects-card">    
+      <img src="./images/placeholderWindermere.jpg" alt="">
+      <div class="projects-info">
+        <h3>Coming soon</h3>
+        <!-- <p>HTML | CSS | JS</p>
+        <button data-popup-target="#popup3">More info</button> -->                
+      </div>
+    </div>
+    <!-- project item 3 popup -->
+    <div class="popup" id="popup3">
+      <div class="popup-header">
+        <div class="title">Pop-up Title 3</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <!-- project item 3 popup body mobile -->
+      <div class="popup-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quisquam assumenda minima harum cupiditate autem odit quibusdam laudantium? Architecto nostrum reprehenderit quia velit eum iure. Dolores at est accusantium doloremque unde illo delectus nihil placeat odio?</p> 
+        <div class="popup-button-container">
+          <button>View code</button>
+          <button>Visit site</button>
+        </div>  
+      </div>
+      <!-- project item 3 popup body desktop -->
+      <div class="popup-body-dt">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quisquam assumenda minima harum cupiditate autem odit quibusdam laudantium? Architecto nostrum reprehenderit quia velit eum iure. Dolores at est accusantium doloremque unde illo delectus nihil placeat odio?</p>
+        <p>Aperiam modi ab, animi commodi accusamus, eligendi iure maiores ipsa unde dolorem earum optio ex aliquam laboriosam. Error unde quidem doloribus vitae, molestias, qui quisquam cumque tempore sed ducimus aut sint officiis voluptates, et reiciendis dolor. Non consequuntur explicabo asperiores commodi perferendis voluptatem culpa fuga.</p> 
+        <p>Placeat officiis doloribus, pariatur nulla quasi voluptatum cupiditate quia, delectus repellendus neque et autem excepturi corrupti error odit quisquam!</p>
+        <div class="popup-button-container">
+          <button>View code</button>
+          <button>Visit site</button>
+        </div>  
+      </div>
+    </div>
+    <!-- project item 4-->
+    <div class="projects-card">    
+      <img src="./images/placeholderYewdale.jpg" alt="">
+      <div class="projects-info">
+        <h3>Coming soon</h3>
+        <!-- <p>HTML | CSS | JS</p>
+        <button data-popup-target="#popup4">More info</button> -->                
+      </div>
+    </div>
+    <!-- project item 4 popup -->
+    <div class="popup" id="popup4">
+      <div class="popup-header">
+        <div class="title">Pop-up Title 4</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <!-- project item 4 popup body mobile -->
+      <div class="popup-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quisquam assumenda minima harum cupiditate autem odit quibusdam laudantium? Architecto nostrum reprehenderit quia velit eum iure. Dolores at est accusantium doloremque unde illo delectus nihil placeat odio?</p>
+        <div class="popup-button-container">
+          <button>View code</button>
+          <button>Visit site</button>
+        </div>  
+      </div>
+      <!-- project item 4 popup body desktop -->
+      <div class="popup-body-dt">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quisquam assumenda minima harum cupiditate autem odit quibusdam laudantium? Architecto nostrum reprehenderit quia velit eum iure. Dolores at est accusantium doloremque unde illo delectus nihil placeat odio?</p>
+        <p>Aperiam modi ab, animi commodi accusamus, eligendi iure maiores ipsa unde dolorem earum optio ex aliquam laboriosam. Error unde quidem doloribus vitae, molestias, qui quisquam cumque tempore sed ducimus aut sint officiis voluptates, et reiciendis dolor. Non consequuntur explicabo asperiores commodi perferendis voluptatem culpa fuga.</p> 
+        <p>Placeat officiis doloribus, pariatur nulla quasi voluptatum cupiditate quia, delectus repellendus neque et autem excepturi corrupti error odit quisquam!</p>    
+        <div class="popup-button-container">
+          <button>View code</button>
+          <button>Visit site</button>
+        </div>  
+      </div>
+    </div>    
+    <!-- project item 5-->
+    <div class="projects-card">    
+      <img src="./images/placeholderBlea.jpg" alt="">
+      <div class="projects-info">
+        <h3>Coming soon</h3>
+        <!-- <p>HTML | CSS | JS</p>
+        <button data-popup-target="#popup5">More info</button> -->                
+      </div>
+    </div>
+    <!-- project item 5 popup -->
+    <div class="popup" id="popup5">
+      <div class="popup-header">
+        <div class="title">Pop-up Title 5</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <!-- project item 5 popup body mobile -->
+      <div class="popup-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quisquam assumenda minima harum cupiditate autem odit quibusdam laudantium? Architecto nostrum reprehenderit quia velit eum iure. Dolores at est accusantium doloremque unde illo delectus nihil placeat odio?</p>
+        <div class="popup-button-container">
+          <button>View code</button>
+          <button>Visit site</button>
+        </div>  
+      </div>
+      <!-- project item 5 popup body desktop -->
+      <div class="popup-body-dt">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quisquam assumenda minima harum cupiditate autem odit quibusdam laudantium? Architecto nostrum reprehenderit quia velit eum iure. Dolores at est accusantium doloremque unde illo delectus nihil placeat odio?</p>
+        <p>Aperiam modi ab, animi commodi accusamus, eligendi iure maiores ipsa unde dolorem earum optio ex aliquam laboriosam. Error unde quidem doloribus vitae, molestias, qui quisquam cumque tempore sed ducimus aut sint officiis voluptates, et reiciendis dolor. Non consequuntur explicabo asperiores commodi perferendis voluptatem culpa fuga.</p> 
+        <p>Placeat officiis doloribus, pariatur nulla quasi voluptatum cupiditate quia, delectus repellendus neque et autem excepturi corrupti error odit quisquam!</p>
+        <div class="popup-button-container">
+          <button>View code</button>
+          <button>Visit site</button>
+        </div>  
+      </div>
+    </div>
+    <!-- project item 6-->
+    <div class="projects-card">    
+      <img src="./images/placeholderUllswater.jpg" alt="">
+      <div class="projects-info">
+        <h3>Coming soon</h3>
+        <!-- <p>HTML | CSS | JS</p>
+        <button data-popup-target="#popup6">More info</button> -->                
+      </div>
+    </div>
+    <!-- project item 6 popup -->
+    <div class="popup" id="popup6">
+      <div class="popup-header">
+        <div class="title">Pop-up Title 6</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <!-- project item 6 popup body mobile -->
+      <div class="popup-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quisquam assumenda minima harum cupiditate autem odit quibusdam laudantium? Architecto nostrum reprehenderit quia velit eum iure. Dolores at est accusantium doloremque unde illo delectus nihil placeat odio?</p>
+        <div class="popup-button-container">
+          <button>View code</button>
+          <button>Visit site</button>
+        </div>  
+      </div>
+      <!-- project item 6 popup body desktop -->
+      <div class="popup-body-dt">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quisquam assumenda minima harum cupiditate autem odit quibusdam laudantium? Architecto nostrum reprehenderit quia velit eum iure. Dolores at est accusantium doloremque unde illo delectus nihil placeat odio?</p>
+        <p>Aperiam modi ab, animi commodi accusamus, eligendi iure maiores ipsa unde dolorem earum optio ex aliquam laboriosam. Error unde quidem doloribus vitae, molestias, qui quisquam cumque tempore sed ducimus aut sint officiis voluptates, et reiciendis dolor. Non consequuntur explicabo asperiores commodi perferendis voluptatem culpa fuga.</p> 
+        <p>Placeat officiis doloribus, pariatur nulla quasi voluptatum cupiditate quia, delectus repellendus neque et autem excepturi corrupti error odit quisquam!</p>
+        <div class="popup-button-container">
+          <button>View code</button>
+          <button>Visit site</button>
+        </div>  
+      </div>
+    </div>
+    <div id="popup-overlay"></div> 
+  </section>
+
+  <!--========================================== 
+  ================= SKILLS ===================== 
+  ===========================================-->
+
+  <section id="skills" class="skills">
+
+    <h2>Skills</h2>
+
+    <p class="icons"><span class="fab fa-html5"></span> <span class="fab fa-css3-alt"></span> <span class="fab fa-js-square"></span> <span class="fab fa-github"></span></p>
+
+    <h3>Course progress</h3>
+    <p class="progress-course">Codecademy Full Stack:</p>
+    <div class="progress-container">
+      <div class="progress-bar">30%</div>
+    </div>
+    
+  </section>
+
+  <!--========================================== 
+  ================= CONTACT ====================
+  ===========================================-->
+
+  <section id="contact" class="contact">
+
+    <h2>Let's talk...</h2>
+    <p class="speech"><span class="far fa-comments"></span></p>
+
+    <p class="icons"><a href="mailto:rsutton.code@gmail.com"><span class="fas fa-envelope"></span></a> <a href="http://uk.linkedin.com/in/rsutt" target="_blank"><span class="fab fa-linkedin"></span></a> <a href="https://github.com/rsutton2021" target="_blank"><span class="fab fa-github"></span></p></a>
+
+  </section>
+
+  <!--========================================== 
+  ================== FOOTER ==================== 
+  ===========================================-->
+
+  <footer>
+    <p>&copy; Rob Sutton 2021</p>
+  </footer>
+
+  <script defer src="./main.js"></script>
+
+
+
+
+
+
+
+  
+
+</body>
+
+</html>
